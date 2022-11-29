@@ -5,7 +5,7 @@ const puppeteer = require('puppeteer');
 (async () => {
 })();
 
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 http.createServer(async function (req, res) {
   const url = new URL(req.url, `http://${req.headers.host}`);
   if (url.pathname === '/screenshot') {
